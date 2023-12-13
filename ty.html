@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somali Community in Canada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Somali Community in Canada</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Sign Up / Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blogs">
+      <!-- Blog creation form -->
+      <form id="blogForm">
+        <h2>Create Your Blog</h2>
+        <input type="text" placeholder="Title" required>
+        <textarea placeholder="Write your blog here" required></textarea>
+        <button type="submit">Publish</button>
+      </form>
+
+      <!-- Display existing blogs -->
+      <div class="blog-list">
+        <h2>Latest Blogs</h2>
+        <article>
+          <h3>Blog Title</h3>
+          <p>Blog content...</p>
+          <p><a href="#">Read More</a></p>
+
+          <!-- Comments section -->
+          <div class="comments">
+            <h4>Comments</h4>
+            <!-- Display comments -->
+            <div class="comment">
+              <p>User123: Comment content...</p>
+            </div>
+            <!-- Other comments -->
+          </div>
+
+          <!-- Comment form -->
+          <form class="comment-form">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Write a comment" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </article>
+        <!-- Other blog articles -->
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <!-- User account information -->
+      <div class="user-account">
+        <h2>User Account</h2>
+        <p>Logged in as: User123</p>
+        <button>Logout</button>
+      </div>
+
+      <!-- Messaging feature -->
+      <h2>Messages</h2>
+      <!-- Messaging interface -->
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Somali Community in Canada</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
